@@ -90,7 +90,7 @@ public class RandomSpawn extends JavaPlugin{
 		if( yamlHandler.worlds.contains( worldName + ".spawnblacklist") )
 			blacklist = yamlHandler.worlds.getIntegerList(worldName + ".spawnblacklist");
 		
-		if(yamlHandler.worlds.getBoolean(worldName + ".spawnbyplayer")) {
+		if(true) {
 			List<Player> playersOnline = (List<Player>) world.getPlayers();
 			
 			if(playersOnline.size() > 0) {
