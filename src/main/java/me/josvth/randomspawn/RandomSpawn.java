@@ -90,7 +90,7 @@ public class RandomSpawn extends JavaPlugin {
 	public Location chooseSpawn(World world) {
 		String worldName = world.getName();
 		List<Material> blacklist = getMaterialBlackList(worldName);
-		if (yamlHandler.worlds.getBoolean(worldName + ".spawnbyplayer")) {
+		if (true) {
 			List<Player> playersOnline = world.getPlayers();
 
 			if (!playersOnline.isEmpty()) {
